@@ -1,0 +1,67 @@
+{
+    "OpenAi": {
+        "Model": {
+            "Lenguague":{
+                "GPT-4": {
+                    "modelId": "gpt-4",
+                    "inputs": {
+                        "Context": {
+                            "type": "list",
+                            "options": ["8k", "32k"]
+                        },
+                        "Snapshot": {
+                            "type": "text"
+                        }
+                    }
+                },
+                "GPT-3.5": {
+                    "modelId": "gpt-3.5-turbo",
+                    "inputs": {
+                        "Context": {
+                            "type": "list",
+                            "options": ["4k", "8k"]
+                        },
+                        "Snapshot": {
+                            "type": "text"
+                        }
+                    }
+                }
+            },
+            "Image":{
+                "Dall-e": {}
+            }
+        }
+    },
+    "Google": {
+        "Model": {
+            "Lenguague":{
+                "Bard": {}
+            },
+            "Image":{
+                "Iamge IA": {}
+            }
+        }
+    },
+    "Stable Diffusion": {
+        "Model": {
+            "Image":{
+                "StableDiffusion": {}
+            }
+        }
+    },
+    "IBM": {
+        "Model": {
+            "Voice":{
+                "Watson": {
+                    "modelId": "watson",
+                    "inputs": {
+                        "Voice": {
+                            "type": "list",
+                            "options": ["Maria", "Paco"]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

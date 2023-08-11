@@ -1,0 +1,47 @@
+.modelSelector{
+    display: flex;
+    justify-content: space-around;
+
+    font-size: 15px;
+    color: #e4e4e4;
+}
+
+.modelCont{
+    margin-top: 10px;
+    opacity: .5;
+    z-index: 1;
+
+    transition: opacity .5s;
+}
+
+.modelCont:hover{
+    opacity: 1;
+}
+
+.modelCont:hover > .model{
+    transform: translateY(0);
+}
+
+.modelCont .modelType{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.modelCont .model{
+    background-color: #363636;
+    border-radius: 8px;
+    border: 1px solid #0f7257;
+    overflow: hidden;
+    transform: translateY(-32px);
+    transition: height .5s, transform .5s;
+}
+
+.model p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+    height: 28px;
+    width: 150px;
+    margin-left: 5px;
+}

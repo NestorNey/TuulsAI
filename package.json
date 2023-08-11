@@ -1,0 +1,22 @@
+{
+  "name": "gpt-tk",
+  "version": "1.0.0",
+  "main": "src/backend/startApp.js",
+  "scripts": {
+    "start": "electron src/backend/startApp.js",
+    "admin-start": "runas /user:administrador \"npm start\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron-drag": "^2.0.0",
+    "electron-reload": "^2.0.0-alpha.1",
+    "openai": "^3.3.0",
+    "puppeteer": "^20.8.2"
+  },
+  "devDependencies": {
+    "electron": "^25.2.0"
+  },
+  "description": ""
+}

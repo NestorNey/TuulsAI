@@ -1,0 +1,92 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ css: 'chat.css' }}">
+    <link rel="stylesheet" href="{{ css: 'modelSelectorStyle.css' }}">
+    <link rel="stylesheet" href="{{ css: 'modelConfigurator.css' }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="content">
+        <div class="titlebar">
+            <div class="title">
+                <h1>☰</h1>
+            </div>
+            <div class="controlBar">
+                <button id="min"><img src="{{ icon: 'min.png' }}"></button>
+                <button id="max"><img src="{{ icon: 'max.png' }}"></button>
+                <button id="close"><img src="{{ icon: 'close.png' }}"></button>
+            </div> 
+        </div>
+        <div class="pane">
+            <div class="modelSelector">
+                <div class="modelCont">
+                    <p class="modelType">Lenguague model</p>
+                    <ul class="modelList">
+                        <p class="modelSelected">GPT: gpt-turbo-16k</p>
+                        <ul class="modelToSelect">
+                            <li><p class="model" type="gpt">GPT</p></li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="modelCont">
+                    <p class="modelType">Image model</p>
+                    <ul class="modelList">
+                        <p class="modelSelected">Dall E - version-1</p>
+                        <ul class="modelToSelect">
+                            <li><p class="model" type="dall-e">Dall-E</p></li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="modelCont">
+                    <p class="modelType">Voice model</p>
+                    <ul class="modelList">
+                        <p class="modelSelected">Webex - maria voice</p>
+                        <ul class="modelToSelect">
+                            <li><p>Webex</p></li>
+                            <li><p>Google</p></li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+            <div class="imagePane">
+                <div class="circle">
+                    <img src="{{ media: 'gpt.svg' }}">
+                </div>
+            </div>
+            <div class="chathistory">
+            
+            </div>
+            <div class="inputPane">
+                <div class="inputBar">
+                    <div class="mode">
+                        <p>Chat mode</p>
+                        <div id="modeButton">
+                            <div id="selector"></div>
+                        </div>
+                    </div>
+                    <div id="input">
+                        <textarea id="textArea" spellcheck="false" required></textarea>
+                        <button>
+                            <img src="{{ icon: 'send.png' }}">
+                        </button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ script: 'model/modelConfig.js' }}"></script>
+    <script src="{{ script: 'chat/chatSender.js' }}"></script>
+    <script src="{{ script: 'chat/textArea.js' }}"></script>
+    
+</body>
+<div class="configuration">
+    <div class="configurations"></div>
+    <div></div>
+</div>
+</html>

@@ -1,0 +1,10 @@
+{
+    "mainJs": "app/Main.js",
+    "mainHtml": "../frontend/views/chat.html",
+    
+    "views": "../frontend/views",
+    "css": "../frontend/static/css",
+    "js": "../frontend/static/js",
+
+    "themes": "../frontend/themes"
+}

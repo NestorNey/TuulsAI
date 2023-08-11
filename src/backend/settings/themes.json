@@ -1,0 +1,13 @@
+{
+    "theme": "dark",
+    "dark": {
+        "themeId": "dark",
+        "backgroundColor": "#252525",
+        "fontColor": "#E4E4E4"
+    },
+    "light": {
+        "themeId": "light",
+        "backgroundColor": "#E4E4E4",
+        "fontColor": "#252525"
+    }
+}
